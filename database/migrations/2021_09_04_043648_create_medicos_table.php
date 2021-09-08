@@ -22,6 +22,7 @@ class CreateMedicosTable extends Migration
             $table->boolean('estado')->default(false);
             $table->integer('celular'); 
             $table->text('direccion');
+           
             $table->timestamps();
         });
     }

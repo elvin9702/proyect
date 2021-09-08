@@ -17,11 +17,13 @@ class CreatePersonalsTable extends Migration
     {
         Schema::create('personals', function (Blueprint $table) {
             $table->id();
+            
             $table->text('nombre');
             $table->text('apellido');
             $table->integer('edad');
             $table->integer('celular');
             $table->boolean('estado')->default(false);
+          
             $table->timestamps();
         });
     }
